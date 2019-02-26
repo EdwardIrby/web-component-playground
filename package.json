@@ -1,0 +1,13 @@
+{
+  "name": "slot-webcomponent-example",
+  "private": true,
+  "main": "dist/components.js",
+  "scripts": {
+    "dev": "npx rollup -w --config rollup.config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "rollup": "latest",
+    "rollup-plugin-browsersync": "latest"
+  }
+}
