@@ -11,28 +11,26 @@
     <template>
       <style>
         :host {
-          display: block;
+          display: contents;
           contain: content;
-        }
-        [slot] {
-          color: blue
+          color: blue;
         }
       </style>
-    <slot slot="input"></slot>
+    <slot name="input"></slot>
     <slot></slot>
     </template>
   </decorate-element>
   <form>
     <radio-input>
-      <input type="radio" name="gender" value="male"> 
+      <input type="radio" name="gender" value="male" slot="input"> 
         male
       </radio-input>
       <radio-input>
-        <input type="radio" name="gender" value="female"> 
+        <input type="radio" name="gender" value="female" slot="input"> 
         female
       </radio-input>
       <radio-input>
-        <input type="radio" name="gender" value="unicorn"> 
+        <input type="radio" name="gender" value="unicorn" slot="input"> 
         unicorn
     </radio-input>
   </form>
